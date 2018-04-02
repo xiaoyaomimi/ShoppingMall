@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mimile.onlinestore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".app.OnlieStoreApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.activity.MainActivity" />
+        <activity android:name=".view.activity.StartOverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.GuidePageActivity" />
+        <activity android:name=".view.activity.LoginActivity" />
+        <activity android:name=".view.activity.UserInfoActivity" />
+        <activity android:name=".view.activity.UserSettingActivity" />
+        <activity android:name=".view.activity.MultiImageSelectorActivity" />
+        <activity android:name=".view.activity.AddressActivity" />
+        <activity android:name=".view.activity.AddAddressActivity" />
+        <activity
+            android:name=".view.activity.UserCommonActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".view.activity.LogisticsActivity" />
+        <activity android:name=".view.activity.WaresDetialActivity" />
+        <activity android:name=".view.activity.PhotoViewPagerActivity" />
+        <activity android:name=".view.activity.QRDroidActivity" />
+
+        <service android:name=".api.AppUpdateService" />
+
+        <activity android:name=".view.activity.SearchWaresActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+    </application>
+
+</manifest>

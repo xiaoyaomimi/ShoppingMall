@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mimile.onlinestore.view.activity.GuidePageActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_page_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/guide_page_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:padding="15dp"
+        android:text="开启新旅程"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/guide_page_button_selector"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_page_dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_page_dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_page_dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="15.0dip"
+            android:src="@drawable/guide_page_dot" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="WNumberKeyboardView">
+
+        <!-- 删除按键的图标 -->
+        <attr name="wnkv_deleteDrawable" format="reference" />
+
+        <!-- 删除按键图标的宽度 -->
+        <attr name="wnkv_deleteWidth" format="dimension|reference" />
+
+        <!-- 删除按键图标的高度 -->
+        <attr name="wnkv_deleteHeight" format="dimension|reference" />
+
+        <!-- 删除按键图标的颜色 -->
+        <attr name="wnkv_deleteBackgroundColor" format="color|reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

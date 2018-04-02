@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+        android:id="@+id/rv_home_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:orientation="vertical">
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:image_scale_type="fit_xy"
+                app:indicator_width="6dp"
+                app:indicator_height="6dp"
+                app:indicator_drawable_selected="@drawable/banner_indicator_selected"
+                app:indicator_drawable_unselected="@drawable/banner_indicator_unselected"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#cdcdcd"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="2dp"
+                android:background="#cdcdcd"/>
+            <GridView
+                android:id="@+id/home_main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:verticalSpacing="10dp"
+                android:background="#ffffff"
+                android:listSelector="@drawable/gridview_list_selector"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#cdcdcd"/>
+        </LinearLayout>
+    </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rv_home_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_home_commend_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_home_serach_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent">
+        <ImageView
+            android:id="@+id/img_home_sacn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/ic_scan" />
+
+        <TextView
+            android:id="@+id/home_fragment_search_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="小米5s"
+            android:textSize="15sp"
+            android:textColor="@color/groupbutton"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:drawableLeft="@drawable/ic_search_black_24dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_message"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/popwin_sort_key_lv"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:padding="2dp"
+        android:dividerHeight="1px"
+        android:scrollingCache="false"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/gridview_list_selector">
+
+    </ListView>
+</LinearLayout>

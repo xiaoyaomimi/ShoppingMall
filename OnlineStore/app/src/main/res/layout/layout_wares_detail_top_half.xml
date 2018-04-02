@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mimile.base.view.graphicdetial.GradationScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wares_detail_top_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/wares_detial_banner"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:indicator_drawable_selected="@drawable/banner_indicator_selected"
+            app:indicator_drawable_unselected="@drawable/banner_indicator_unselected"
+            app:indicator_height="6dp"
+            app:indicator_width="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/wares_detial_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="27寸超薄电脑液晶显示器LED高清HDMI护眼IPS不闪屏22 24 19无坏点"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wares_detial_desc"
+                android:layout_marginTop="5dp"
+                android:text="￥371.66"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_share"
+                android:gravity="center"
+                android:text="分  享"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递:免运费"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="月销1332笔"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="广东广州"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/wares_detial_promise1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_cross"
+                android:drawablePadding="3dp"
+                android:text="卖家承诺24小时发货"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/wares_detial_promise2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/wares_detial_promise1"
+                android:drawableLeft="@drawable/ic_cross"
+                android:drawablePadding="3dp"
+                android:text="订单险"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cdcdcd" />
+
+        <RelativeLayout
+            android:id="@+id/wares_detail_opt_kind_rl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_bg_selector"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择颜色分类;套餐类型"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cdcdcd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝贝评价(80014)"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_user_head"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="夏天的风"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:paddingTop="5dp"
+                android:text="包含很多元素来帮助我们画出自己的矢量图，下面，我们就来写两个个例子来使用它们。这里就直接拿官网的例子来学习了"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2016-12-03     套餐类型:官方标配;颜色分类:A-1款 22寸"
+                android:textColor="#cdcdcd"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/wares_detail_top_view_all_evaluate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/logout_button_selector"
+                android:padding="10dp"
+                android:text="查看全部评价"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cdcdcd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="问大家(20)"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/right_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_question"
+                    android:drawablePadding="2dp"
+                    android:text="漏光吗？"
+                    android:textColor="#888888"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2个回答"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_question"
+                    android:drawablePadding="2dp"
+                    android:text="画面清晰吗？"
+                    android:textColor="#888888"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="6个回答"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cdcdcd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/wares_detial_store_ico"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/start_over" />
+
+            <TextView
+                android:id="@+id/wares_detial_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wares_detial_store_ico"
+                android:text="液晶显示器" />
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wares_detial_store_name"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/wares_detial_store_ico"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/custom_ratingbar"
+                android:rating="3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@drawable/layout_divider_gray"
+            android:dividerPadding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="全部宝贝"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="上新宝贝"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20万"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="关注人数"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/ic_low"
+                    android:text="宝贝描述  4.6"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/ic_low"
+                    android:text="卖家服务  4.7"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/ic_low"
+                    android:text="物流服务  4.7"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/logout_button_selector"
+                android:padding="10dp"
+                android:text="查看分类"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/logout_button_selector"
+                android:padding="10dp"
+                android:text="进入店铺"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cdcdcd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="25dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/wares_detial_pull_up_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="继续拖动，查看图文详情"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.mimile.base.view.graphicdetial.GradationScrollView>

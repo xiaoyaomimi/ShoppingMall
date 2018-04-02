@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/modify_address"
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_bg_selector"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="编辑"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#cdcdcd"/>
+        <RelativeLayout
+            android:id="@+id/delete_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg_selector"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="删除"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

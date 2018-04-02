@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4"
+        android:paddingLeft="36.5dp"
+        android:text="A"
+        android:textColor="#969696"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/address_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蔡东东"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/address_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13564673224"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:textSize="20sp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#cdcdcd"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/address_user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15sp"
+                    android:text="RecyclerView出现已经有一段时间了，相信大家肯定不陌生了，大家可以通过导入support-v7对其进行使用"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/address_list_item_radiobtn"
+                android:clickable="false"
+                android:focusable="false"
+                android:button="@null"
+                android:background="@drawable/person_setting_sex_selector"
+                android:focusableInTouchMode="false"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#cdcdcd"/>
+</LinearLayout>

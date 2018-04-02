@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_kind">
+        <item>宝贝</item>
+        <item>店铺</item>
+        <item>天猫</item>
+    </string-array>
+    <string-array name="sort_key">
+        <item>综合排序</item>
+        <item>卖家信用</item>
+        <item>价格由高到低</item>
+        <item>价格由低到高</item>
+    </string-array>
+</resources>

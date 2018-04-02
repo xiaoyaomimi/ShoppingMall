@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.mimile.onlinestore"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    //图片异步加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //首页banner轮播和引导界面
+    compile 'com.youth.banner:banner:1.4.4'
+    //网络请求框架底层封装于okhttp
+    //    compile 'com.lzy.net:okgo:2.1.3'
+    //    compile 'com.lzy.net:okrx:0.1.2'
+    //    compile 'com.lzy.net:okserver:1.1.2'
+    //使用retrofit2 + okhttp + rxjava 实现mvp模式
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.1.3'
+    compile 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    //badgeview
+    compile 'cn.bingoogolapple:bga-badgeview:1.0.0@aar'
+    //kenburnsview
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile project(path: ':base')
+    compile files('libs/badgeview.jar')
+    compile project(path: ':pickerview')
+}

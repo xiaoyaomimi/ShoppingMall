@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dropDownMenu_tabMenuView" type="id"></item>
+    <item name="dropDownMenu_underLine" type="id"></item>
+</resources>

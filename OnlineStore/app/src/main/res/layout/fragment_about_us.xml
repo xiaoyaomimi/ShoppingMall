@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="\t\t西部世界第一季全集,西部世界第一季在线观看和西部世界第一季迅雷下载由奇特影院收集于互联网,美国电视剧西部世界"
+        android:textSize="15sp"
+        android:textColor="#888888"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/qr_code"
+        android:layout_gravity="center"/>
+</LinearLayout>

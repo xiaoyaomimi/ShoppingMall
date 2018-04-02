@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">OnlineStore</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio_tab_home">首页</string>
+    <string name="radio_tab_kind">分类</string>
+    <string name="radio_tab_find">发现</string>
+    <string name="radio_tab_cart">购物车</string>
+    <string name="radio_tab_me">我的</string>
+    <string name="folder_all">所有照片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="account_security">账户安全</string>
+    <string name="message_alert">消息通知</string>
+    <string name="member_center">会员中心</string>
+    <string name="common">通用</string>
+    <string name="about_us">关于我们</string>
+    <string name="share_friends">分享好友</string>
+    <string name="app_new_version_check">检查更新</string>
+    <string name="app_current_version">当前版本</string>
+    <string name="app_update_notice">检测到新版本version，是否升级到该版本？</string>
+    <string name="cancel">取   消</string>
+    <string name="confirm">确   定</string>
+    <string name="update">更新</string>
+    <string name="modify">编辑</string>
+    <string name="delete">删除</string>
+    <string name="done">完成</string>
+    <string name="submit">结算</string>
+    <string name="confirm_order">确认订单</string>
+    <string name="my_order">我的订单</string>
+    <string name="order_all">全   部</string>
+    <string name="order_unpaid">待付款</string>
+    <string name="order_undelivered">待发货</string>
+    <string name="order_receipt">待收货</string>
+    <string name="order_not_evaluate">待评价</string>
+    <string name="extened_receipt">延长收货</string>
+    <string name="view_logistics">查看物流</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="successful_trade">交易成功</string>
+    <string name="wait_to_ship">等待卖家发货</string>
+    <string name="seller_shipped">卖家已发货</string>
+    <string name="no_payment">未付款</string>
+    <string name="wares_num">共N件商品  合计: </string>
+    <string name="wares_freight">含运费</string>
+    <string name="logistics_detial">物流详情</string>
+    <string name="trade_success">交易成功</string>
+    <string name="back">返回</string>
+    <string name="permission_denied">权限已被禁用，请手动在设置中开启</string>
+    <string name="modify_phone_num">修改手机号</string>
+    <string name="modify_pwd">修改登录密码</string>
+    <string name="modify_pay_pwd">修改支付密码</string>
+    <string name="get_ver_code">获取验证码</string>
+    <string name="get_ver_code_again">重新获取验证码</string>
+    <string name="get_ver_code_again_count">秒后重试</string>
+    <!--app更新-->
+    <string name="insert_card">开始下载</string>
+    <string name="download_sucess">下载成功</string>
+    <string name="download_failed">下载失败</string>
+    <string name="is_downing">正在下载</string>
+
+    <string name="press_again_exit">再按一次退出程序</string>
+    <string name="search">搜索</string>
+    <string name="search_history">历史搜索</string>
+    <string name="search_discory">搜索发现</string>
+    <string name="search_discory_note">当前搜索发现已隐藏</string>
+    <string name="sort_multiple">综合排序</string>
+</resources>

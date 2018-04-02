@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--自定义ratingbar的背景图-->
+    <!--不亮-->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/ic_crown_trans" />
+    <!--半亮-->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/ic_crown_trans" />
+    <!--全亮-->
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/ic_crown" />
+</layer-list>

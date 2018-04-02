@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"  tools:context=".view.activity.MainActivity">
+
+    <view
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_weight="1"
+        class="com.mimile.base.view.MyViewPager">
+    </view>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/navigate_dinkline" />
+    <RadioGroup
+        android:id="@+id/main_group"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dp"
+        android:layout_gravity="bottom"
+        android:background="@color/titletext_color"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/radio_button_home_selector"
+            android:text="@string/radio_tab_home" />
+
+        <RadioButton
+            android:id="@+id/rb_kind"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/radio_button_kind_selector"
+            android:text="@string/radio_tab_kind" />
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/radio_button_find_selector"
+            android:text="@string/radio_tab_find" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/radio_button_cart_selector"
+            android:text="@string/radio_tab_cart" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/radio_button_me_selector"
+            android:text="@string/radio_tab_me" />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccentPress">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="购物车"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rv_cart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cart_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#EEE9E9"/>
+        <CheckBox
+            android:id="@+id/rv_cart_check_box_select_all_wares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/person_setting_sex_selector"
+            android:drawablePadding="2dp"
+            android:text="全选"/>
+        <TextView
+            android:id="@+id/rv_cart_tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@color/colorAccent"
+            android:text="结算(0)"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/rv_cart_tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/rv_cart_tv_submit"/>
+
+        <TextView
+            android:id="@+id/rv_cart_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计: "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@id/rv_cart_tv_total_price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不含运费"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/rv_cart_tv_submit"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/area_picker_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="取消"
+            android:textColor="@color/picker_tv"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="选择城市"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/area_picker_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="确定"
+            android:textColor="@color/picker_tv"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/bg_color"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.mimile.pickerview.wheel.widget.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.mimile.pickerview.wheel.widget.WheelView>
+
+        <com.mimile.pickerview.wheel.widget.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.mimile.pickerview.wheel.widget.WheelView>
+
+        <com.mimile.pickerview.wheel.widget.WheelView
+            android:id="@+id/id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.mimile.pickerview.wheel.widget.WheelView>
+    </LinearLayout>
+    
+
+</LinearLayout>
